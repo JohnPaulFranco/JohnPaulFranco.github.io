@@ -1,11 +1,32 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class 2027 Store</title>
+    <title>Shirt Survey</title>
 </head>
 <body>
-    <h1>FUNDRAISERS!!</h1>
-    <p>Buy your shirts here!!!</p>
+
+<h1>Shirt Size and Color Survey</h1>
+
+<form action="submit_survey.php" method="post">
+    <label for="size">Select your shirt size:</label>
+    <select id="size" name="size" required>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="xl">Extra Large</option>
+    </select>
+
+    <br>
+
+    <label for="color">Select your preferred color:</label>
+    <input type="color" id="color" name="color" value="#ffffff" required>
+
+    <br>
+
+    <input type="submit" value="Submit">
+</form>
+
 </body>
 </html>
