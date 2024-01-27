@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shirt Survey</title>
+    <title>T-Shirt Fundraiser</title>
 </head>
 <body>
 
-<h1>Shirt Size and Color Survey</h1>
+<h1>T-Shirt Fundraiser</h1>
+
 
 <form action="submit_survey.php" method="post">
     <label for="size">Select your shirt size:</label>
@@ -24,6 +25,11 @@
     <input type="color" id="color" name="color" value="#ffffff" required>
 
     <br>
+    <fieldset>
+        <legend>Shirt Color</legend>
+        <label><input id="beige" type="radio" name="beige-black" value="beige" checked> Beige</label>
+        <label><input id="black" type="radio" name="beige-black" value="black"> Black</label>
+    </fieldset>
 
     <input type="submit" value="Submit">
 </form>
